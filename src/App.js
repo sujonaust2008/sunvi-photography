@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import About from './Pages/About/About';
 import Header from './Pages/Shared/Header/Header';
@@ -13,7 +12,7 @@ import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

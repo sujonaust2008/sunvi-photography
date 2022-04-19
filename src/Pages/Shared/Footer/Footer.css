@@ -1,0 +1,34 @@
+.footerSection {
+
+    color: white;
+    padding: 10px;
+    width: 86%;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+@media only screen and (max-width: 800px) {
+    .footerSection {
+        grid-template-columns: 1fr;
+        width: 10%;
+    }
+}
+
+.fontAweStyle {
+    border: 2px solid rgb(223, 30, 30);
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+}
+
+.fontAweSection {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@media only screen and (max-width: 800px) {
+    .fontAweSection {
+        flex-direction: column;
+    }
+}

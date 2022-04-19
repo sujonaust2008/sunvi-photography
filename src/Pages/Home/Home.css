@@ -1,0 +1,96 @@
+.bannerSection {
+    background-image: url('../../Images/Banner.jpg');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.textPosition {
+    padding-top: 310px;
+
+}
+
+.serviceSection {
+    margin: 100px;
+}
+
+.weddingSection {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+@media only screen and (max-width: 800px) {
+    .weddingSection {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.weddingSection img {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .weddingSection img {
+        height: 300px;
+        border-radius: 10px;
+    }
+
+}
+
+.weddingService {
+    background-color: #AA5F4B;
+    height: 40%;
+    margin-top: 20%;
+    margin-left: -20%;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .weddingService {
+        height: auto;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+.weddingReverseSection {
+    display: grid;
+    grid-template-columns: 3fr 5fr
+}
+
+.weddingReverseSection img {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.weddingReversService {
+    background-color: #AA5F4B;
+    height: 40%;
+    margin-top: 20%;
+    margin-right: -20%;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.servicesStyle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .servicesStyle {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
