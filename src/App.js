@@ -3,12 +3,13 @@ import About from './Pages/About/About';
 import Header from './Pages/Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import Services from './Pages/services/Services';
-import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import Checkout from './Pages/Checkout/Checkout';
 import Footer from './Pages/Shared/Footer/Footer';
 import Blogs from './Pages/Blogs/Blogs';
+import Login from './Pages/Login/Login/Login';
+import Services from './Pages/SevicesDetailes/Services';
+
 
 function App() {
   return (
