@@ -1,0 +1,22 @@
+.blogsSection {
+    margin: 150px auto;
+}
+
+.differBlog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 85%;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .differBlog {
+        grid-template-columns: 1fr;
+    }
+}
+
+.authenticationStyle {
+    width: 85%;
+    margin: 40px auto;
+}
