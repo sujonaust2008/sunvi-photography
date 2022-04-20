@@ -34,10 +34,10 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password);
 
     }
-    // if(user){
-    //      return navigate('/home');
-    // }
-    
+    if(user){
+          navigate('/');
+    }
+
     return (
         <div className='w-50 mx-auto loginStyle'>
             <Form onSubmit={handleCreateUser}>

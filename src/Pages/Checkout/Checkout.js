@@ -1,10 +1,11 @@
-import { Button } from 'bootstrap';
+
 import React from 'react';
-import { Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 const Checkout = () => {
     return (
         <div>
+            <h2>This is check out page</h2>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
