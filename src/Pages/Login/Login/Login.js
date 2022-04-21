@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -10,6 +10,7 @@ import './Login.css';
 const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     
     const [
         signInWithEmailAndPassword,
@@ -57,6 +58,16 @@ const Login = () => {
                 <Button variant="primary" type="submit" className='w-100 mt-3 py-2 fw-bold'>
                     Submit
                 </Button>
+                <div className='mt-3 d-flex align-items-center justify-content-start'>
+                    <p className='pt-3'>Forget Password?</p>
+                    <Button variant="link" 
+                    onClick={async () => {
+                        await sendPasswordResetEmail(email);
+                        alert('Sent email');
+                      }}
+                    className='text-decoration-none fw-bold text-warning'>Reset Now.</Button>
+                </div>
+
                 <div className='mt-3'>
                     <p>Need to create a account ? <span ><Link to='/register' className='text-decoration-none fw-bold'>Register Now.</Link></span></p>
                 </div>
