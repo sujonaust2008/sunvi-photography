@@ -1,9 +1,10 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 
 const Loading = () => {
     return (
-        <div>
-            
+        <div className='w-100 d-flex justify-content-center align-items-center spinnerHeight'>
+            <Spinner animation='border' variant='primary'></Spinner>
         </div>
     );
 };

@@ -20,8 +20,10 @@ const Header = () => {
                     <Nav className="ms-auto navStyle">
                         <Nav.Link><CustomLink to ="/">Home</CustomLink></Nav.Link>
                         <Nav.Link><CustomLink to ="/blogs">Blogs</CustomLink></Nav.Link>
+                        <Nav.Link><CustomLink to ="/checkout">Checkout</CustomLink></Nav.Link>
                         <Nav.Link><CustomLink to ="/services">Services</CustomLink></Nav.Link>
                         <Nav.Link><CustomLink to ="/about">About</CustomLink></Nav.Link>
+                        
                         {   user?.uid ? 
                             <Button variant="link" onClick={handleSignOut} className="text-decoration-none text-white">SignOut</Button>
                             :
