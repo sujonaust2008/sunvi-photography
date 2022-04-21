@@ -1,3 +1,12 @@
+# Project Name : Sunvi Photography
+* Live link : 
+* This is a photography website for photography services wedding, engagement and family with kids .
+* In this webside we using react with react-bootstarp and raw css for design section.
+* For authentication we use react-firebase-hooks.
+* We use Two Authentication methods: 1. EmailPassword 2. Google methods.
+* We try to secure our firebase.init.js file more secure.  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
