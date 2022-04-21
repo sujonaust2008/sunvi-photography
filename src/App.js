@@ -10,6 +10,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import Login from './Pages/Login/Login/Login';
 import Services from './Pages/SevicesDetailes/Services';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>}>
         </Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      
       
       <Footer></Footer>
     </div>
