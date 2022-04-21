@@ -4,6 +4,7 @@ import { Link, useNavigate,useLocation } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
 
@@ -35,6 +36,10 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password);
 
     }
+
+    if(loading){
+        return <Loading></Loading>;
+    }
     const from = location.state?.from?.pathname || "/"; 
 
     if(user){
@@ -60,9 +65,9 @@ const Register = () => {
                 
                 
                 <p className='text-danger fw-bold'>{error}</p>
-                {
+                {/* {
                     loading && <p>Loading ....</p>
-                }
+                } */}
 
                 <Button variant="primary" type="submit" className='w-100 mt-3 py-2 fw-bold'>
                     Submit

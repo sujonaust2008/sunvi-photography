@@ -7,6 +7,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -33,8 +34,14 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
 
     }
-    const from = location.state?.from?.pathname || "/"; 
 
+    
+
+    if(loading || sending){
+        return <Loading></Loading>;
+    }
+
+    const from = location.state?.from?.pathname || "/"; 
     if(user){
         navigate(from, {replace: true});
     }
@@ -53,9 +60,9 @@ const Login = () => {
                 
                 
                 <p className='text-danger fw-bold fs-4'>{error?.message}</p>
-                {
+                {/* {
                     loading && <p>Loading ....</p>
-                }
+                } */}
                 <Button variant="primary" type="submit" className='w-100 mt-3 py-2 fw-bold'>
                     Submit
                 </Button>
