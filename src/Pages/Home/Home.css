@@ -14,7 +14,8 @@
 }
 
 .serviceSection {
-    margin: 100px;
+    margin-top: 100px;
+    padding: 20px;
 }
 
 .weddingSection {
@@ -55,6 +56,7 @@
     .weddingService {
         height: auto;
         margin-top: 10px;
+        margin-bottom: 10px;
         margin-left: 0;
     }
 }
@@ -62,6 +64,12 @@
 .weddingReverseSection {
     display: grid;
     grid-template-columns: 3fr 5fr
+}
+
+@media only screen and (max-width: 800px) {
+    .weddingReverseSection {
+        grid-template-columns: 1fr;
+    }
 }
 
 .weddingReverseSection img {
@@ -77,6 +85,14 @@
     margin-right: -20%;
     border-radius: 20px;
     z-index: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    .weddingReversService {
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 .servicesStyle {

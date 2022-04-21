@@ -2,7 +2,7 @@
 import Services from '../SevicesDetailes/Services';
 import './Home.css';
 import wedding1 from '../../Images/wedding-3 (1).jpg';
-import wedding2 from '../../Images/angagement.jpg';
+import wedding2 from '../../Images/engagement.jpg';
 import wedding3 from '../../Images/family.jpeg';
 
 
